@@ -1,0 +1,17 @@
+@media only screen and (max-width: 670px) {
+  .chart-container {
+    height: 100%;
+  }
+  .chart-container h2 {
+    padding-bottom: 5px;
+    height: 12%;
+    margin-left: 0px;
+    padding-left: 0px;
+  }
+  .graph {
+    height: 90%;
+    padding-top: 20px;
+    width: 100% !important;
+    padding-left: 0px;
+  }
+}

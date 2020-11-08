@@ -1,0 +1,147 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+.main {
+  background-color: rgb(219, 219, 219);
+  max-width: 1100px;
+  min-height: 100vh;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 8% 92%;
+  justify-content: center;
+  align-items: center;
+  column-gap: 0px;
+  border-right: 1px solid #333;
+}
+
+.navbar {
+  background-color: rgb(0, 204, 255);
+  height: 100%;
+}
+h2 {
+  height: 8vh;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  padding-top: 10px;
+  padding-left: 20px;
+  background-color: white;
+  width: 100%;
+}
+.dashboard {
+  padding: 0px auto 0px auto;
+  margin-top: 0px;
+  background-color: rgb(230, 230, 230);
+  height: 100%;
+  width: 100%;
+}
+h2 + div {
+  padding-left: 1em;
+}
+.logo {
+  margin-left: 1.3vw;
+  margin-top: 2vh;
+  width: 4vw;
+}
+.menu {
+  width: 4vh;
+  margin-left: 20px;
+  cursor: pointer;
+}
+.arrow {
+  width: 15px;
+  height: 15px;
+  margin-left: 10px;
+}
+span {
+  width: 100%;
+  height: 6vh;
+  display: flex;
+  margin-top: 8vh;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(
+    to right,
+    rgb(0, 204, 255),
+    rgba(255, 255, 255, 0.486)
+  );
+}
+
+.warning {
+  text-align: center;
+  padding: 50px;
+}
+
+@media (max-width: 670px) {
+  body {
+    overflow-x: unset;
+  }
+  .main {
+    background-color: rgb(219, 219, 219);
+    width: 100%;
+    min-height: unset;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    border-right: 1px solid #333;
+  }
+  .navbar {
+    position: absolute;
+    top: 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    top: 0px;
+    background-color: rgb(0, 204, 255);
+    height: 10vh;
+    width: 100vw;
+  }
+  .logo {
+    margin-top: unset;
+    width: 8vh;
+  }
+  span {
+    width: 8vh;
+    height: 8vh;
+    display: unset;
+    margin-top: unset;
+    margin-left: 0px;
+    text-align: center;
+    background-image: linear-gradient(
+      to bottom,
+      rgb(0, 204, 255),
+      rgba(255, 255, 255, 0.486)
+    );
+  }
+  .menu {
+    width: 7vh;
+    margin-left: 0px;
+  }
+  .arrow {
+    display: none;
+  }
+  .dashboard {
+    padding: 0px auto 0px auto;
+    margin-top: 10vh;
+    background-color: rgb(230, 230, 230);
+    height: unset;
+    width: 100%;
+  }
+  .dashboard > h2 {
+    text-align: center;
+    height: 4%;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding: 10px 5px 10px 0px;
+  }
+
+  h2 + div {
+    padding-left: unset;
+  }
+}
