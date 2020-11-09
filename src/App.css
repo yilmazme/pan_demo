@@ -111,14 +111,15 @@ span {
   .logo {
     position: absolute;
     top: 1vh;
-    right: 4px;
-    width: 8vw;
+    right: 6px;
+    width: 4vh;
   }
   nav span {
-    width: 8vw;
-    height: 8vw;
+    width: 4vh;
+    height: 4vh;
+    right: 6px;
     position: absolute;
-    top: 16vh;
+    top: 15vh;
     display: unset;
     margin-top: unset;
     text-align: center;
@@ -129,8 +130,9 @@ span {
     );
   }
   .menu {
-    width: 8vw;
+    width: 6vw;
     margin-left: 0px;
+    margin-top: 1.4vw;
   }
   .arrow {
     display: none;
